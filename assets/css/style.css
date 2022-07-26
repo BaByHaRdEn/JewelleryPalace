@@ -92,6 +92,19 @@
     display: none;
     border-radius: 10px;
 }
+#c-cards .layer .icons{
+    display: flex;
+    justify-content: center;
+}
+#c-cards .layer i{
+    border: 1px solid #000;
+    background-color: #000;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: xx-large;
+    color: #fff;
+    padding: 5px;
+}
 .c-text{
     text-align: center;
     padding-top: 30%;
