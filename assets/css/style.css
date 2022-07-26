@@ -81,6 +81,7 @@
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+    transition: all;
 }
 #c-cards .layer{
     position: absolute;
@@ -100,6 +101,7 @@
     font-size: xx-large;
     color: rgb(255,255,255);
 }
+
 #c-cards .card .card-img{
     margin-left: auto;
 

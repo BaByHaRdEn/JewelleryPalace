@@ -1,12 +1,11 @@
 const card= document.querySelectorAll(".card");
 
 let cards=[...card];
-cards.forEach((c)=>{
-    c.addEventListener("mouseover", ()=>{
-        let layers=document.querySelectorAll(".layer");
-        let layer= [...layers]
-        layer.forEach((i)=>{
-            i.style.display="block";
-        })
+cards.forEach((c,i)=>{
+    cards[i].addEventListener("mouseover", ()=>{
+        card[i].firstElementChild.style.display="block";
+    })
+    card[i].addEventListener('mouseout', ()=>{
+        card[i].firstElementChild.style.display="none";
     })
 })
