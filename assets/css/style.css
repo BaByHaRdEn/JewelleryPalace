@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #000;
+    background-color: #fff;
 }
 /*top-bar*/
 #top-bar{
@@ -38,12 +38,12 @@ body{
     width: 90%;
     height: auto;
     border-radius: 10px;
-    background-color:#fff;
+    background-color:rgb(227, 226, 226);
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     padding-bottom: 20px;
-    box-shadow: 2px 2px 2px 0px rgba(255,255,255,0.5);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
     display: flex;
     justify-content: space-between;
 }
@@ -80,7 +80,7 @@ body{
     font-weight: 900;
     text-align: center;
     font-size: xx-large;
-    color: rgb(187, 187, 194);
+    color: rgb(91, 91, 91);
 }
 #c-cards{
     display: flex;
@@ -90,11 +90,11 @@ body{
 #c-cards .card{
     width: 300px;
     height: 270px;
-    background-color:#fff;
+    background-color:rgb(227, 226, 226);
     margin-left: 50px;
     margin-top: 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 0px rgba(255,255,255,0.5);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
     transition: all;
 }
 #c-cards .layer{

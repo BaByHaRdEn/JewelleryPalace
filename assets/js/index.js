@@ -12,10 +12,16 @@ cards.forEach((c,i)=>{
 })
 
 modeBtn.addEventListener("click", ()=>{
-    if(document.body.style.backgroundColor = "black"){
-    document.body.style.backgroundColor = "white";
+    if(document.body.style.backgroundColor = "white"){
+    document.body.style.backgroundColor = "black";
     }else{
         document.body.style.backgroundColor = "black";
     }
-    
+    modeBtn.addEventListener('click', ()=>{
+        if(document.body.style.backgroundColor = "black"){
+            document.body.style.backgroundColor = "white";
+            }else{
+                document.body.style.backgroundColor = "black";
+            }
+    })
 })
