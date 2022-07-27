@@ -2,7 +2,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #fff;
+    background-color: #000;
+}
+.dark-mode{
+    background-color: #000;
+    color: #fff;
 }
 
 /*top-bar*/
@@ -31,14 +35,14 @@ body{
     margin-top: 20px;
 }
 #logo-color{
-    color: #000;
+    color: #fff;
 }
 #navigation{
     align-self: center;
     margin-right: 70px;
 }
 #navigation i{
-    color: black;
+    color: #fff;
     width: 23px;
     height: 23px;
     display: flex;
@@ -49,12 +53,12 @@ body{
     width: 90%;
     height: auto;
     border-radius: 10px;
-    background-color:rgb(227, 226, 226);
+    background-color: rgb(109, 109, 109);
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     padding-bottom: 20px;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px 0px rgba(255,255,255,0.5);
     display: flex;
     justify-content: space-between;
 }
@@ -101,11 +105,11 @@ body{
 #c-cards .card{
     width: 300px;
     height: 270px;
-    background-color:rgb(227, 226, 226);
+    background-color: rgb(109, 109, 109);
     margin-left: 50px;
     margin-top: 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px 0px rgba(255,255,255,0.5);
     transition: all;
 }
 #c-cards .layer{

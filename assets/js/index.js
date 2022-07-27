@@ -12,8 +12,8 @@ cards.forEach((c,i)=>{
 })
 
 modeBtn.addEventListener("click", ()=>{
-    let element = document.body;
-    let hero=document.getElementById("hero");
-    element.classList.toggle("dark-mode");
-    hero.classList.toggle("hero-dark-mode");
+    let dark =document.getElementById("light");
+    dark.toggleAttribute("disabled")
+    let btn=document.getElementById("toggle")
+    btn.classList.toggle("fa fa-toggle-on")
 })

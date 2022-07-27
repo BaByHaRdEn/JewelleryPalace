@@ -15,19 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <!--Carousel-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+    <!--Dark Mode-->
+    <link  rel="stylesheet" href="assets/css/dark-mode.css">
+
     <!--stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link id="light" rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    
     <!--favicon-->
     <link rel="icon" type="x-icon/image" href="assets/imgs/favicon.png">
     <!--Wow JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <style>
-        .hero-dark-mode{
-    background-color: rgb(35, 31, 31);
-    color: #fff;
-}
-    </style>
 </head>
 <body>
     <!--top bar-->
@@ -36,20 +34,23 @@
         <div id="logo">
             <a href="#">
             <img src="assets/imgs/bxs_shopping-bag.png" alt="Logo">
-            <p>JEWELLERY<span style="color:#000;">PALACE</span></p>
+            <p>JEWELLERY<span id="logo-color">PALACE</span></p>
         </a>
         </div>
     <!--navigation-->
     <nav id="navigation">
         <ul class="nav">
             <li class="nav-item">
-                <a href="javascript:void(0);" class="nav-link" id="night-mode-toggle"><img src="assets/imgs/ic_outline-mode-nightb.png" alt="Light mode"></a>
+                <a href="javascript:void(0);" class="nav-link" id="night-mode-toggle"><i id="toggle" class="fa fa-toggle-off"></i></a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"><img src="assets/imgs/clarity_notification-lineb.png" alt="notification"></a>
+                <a href="#" class="nav-link"><i class="fa fa-bell-o"></i></a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"><img src="assets/imgs/ep_shopping-cartb.png" alt="Cart"></a>
+                <a href="#" class="nav-link"><i class="fa fa-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fa fa-user-circle-o"></i></a>
             </li>
         </ul>
     </nav>
