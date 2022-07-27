@@ -47,6 +47,7 @@ body{
     height: 23px;
     display: flex;
     justify-content: space-evenly;
+    font-size: larger;
 }
 /*hero*/
 #hero{
