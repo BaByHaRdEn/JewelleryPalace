@@ -12,16 +12,8 @@ cards.forEach((c,i)=>{
 })
 
 modeBtn.addEventListener("click", ()=>{
-    if(document.body.style.backgroundColor = "white"){
-    document.body.style.backgroundColor = "black";
-    }else{
-        document.body.style.backgroundColor = "black";
-    }
-    modeBtn.addEventListener('click', ()=>{
-        if(document.body.style.backgroundColor = "black"){
-            document.body.style.backgroundColor = "white";
-            }else{
-                document.body.style.backgroundColor = "black";
-            }
-    })
+    let element = document.body;
+    let hero=document.getElementById("hero");
+    element.classList.toggle("dark-mode");
+    hero.classList.toggle("hero-dark-mode");
 })
