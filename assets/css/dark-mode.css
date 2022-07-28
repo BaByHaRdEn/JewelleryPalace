@@ -104,8 +104,8 @@ body{
     flex-wrap:wrap;
 }
 #c-cards .card{
-    width: 300px;
-    height: 270px;
+    width: 270px;
+    height: 240px;
     background-color: rgb(109, 109, 109);
     margin-left: 50px;
     margin-top: 30px;
@@ -115,8 +115,8 @@ body{
 }
 #c-cards .layer{
     position: absolute;
-    width: 300px;
-    height: 270px;
+    width: 270px;
+    height: 240px;
     background-color: rgba(0,0,0,0.5);
     visibility: visible;
     display: none;

@@ -100,8 +100,8 @@ body{
     flex-wrap:wrap;
 }
 #c-cards .card{
-    width: 300px;
-    height: 270px;
+    width: 270px;
+    height: 240px;
     background-color:rgb(227, 226, 226);
     margin-left: 50px;
     margin-top: 30px;
@@ -111,8 +111,8 @@ body{
 }
 #c-cards .layer{
     position: absolute;
-    width: 300px;
-    height: 270px;
+    width: 270px;
+    height: 240px;
     background-color: rgba(0,0,0,0.5);
     visibility: visible;
     display: none;
@@ -155,4 +155,31 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+}
+/*Best Selling Products*/
+#bsp {
+    width:90%;
+    height: auto;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bsp header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(91, 91, 91);
+}
+#bsp-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+#bsp .bsp-card{
+    width: 200px;
+    height: 170px;
+    background-color:rgb(227, 226, 226);
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
 }
