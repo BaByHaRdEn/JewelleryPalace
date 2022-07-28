@@ -175,7 +175,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     overflow-y: hidden;
-    overflow-x:scroll;
+    overflow-x:auto;
     flex-wrap: nowrap;
 }
 #scroll-cards .sc-card{
