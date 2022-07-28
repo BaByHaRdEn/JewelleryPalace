@@ -171,15 +171,20 @@ body{
     font-size: xx-large;
     color: rgb(91, 91, 91);
 }
-#bsp-cards{
+#scroll-cards{
     display: flex;
     justify-content: space-evenly;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    flex-wrap: nowrap;
 }
-#bsp .bsp-card{
+#scroll-cards .sc-card{
     width: 200px;
     height: 170px;
     background-color:rgb(227, 226, 226);
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+    flex: 0 0 auto;
+    margin-left: 20px;
 }
