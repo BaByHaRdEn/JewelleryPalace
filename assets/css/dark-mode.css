@@ -193,7 +193,7 @@ body{
 }
 #scroll-cards .sc-card{
     width: 270px;
-    height: 240px;
+    height: auto;
     background-color: rgb(109, 109, 109);
     margin-top: 30px;
     border-radius: 10px;
@@ -209,6 +209,15 @@ body{
     margin-right: auto;
     margin-top: 20px;
 }
+.sc-card button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: right;
+    visibility: hidden;
+    background-color: rgb(193, 193, 193);
+    color: #000;
+ }
+ 
 .icon{
     position: relative;
     align-self: center;

@@ -1,5 +1,6 @@
 const card= document.querySelectorAll(".card");
 const modeBtn= document.getElementById("night-mode-toggle")
+const scCard= document.querySelectorAll(".sc-card");
 
 //categories
 let cards=[...card];
@@ -11,6 +12,17 @@ cards.forEach((c,i)=>{
         card[i].firstElementChild.style.display="none";
     })
 })
+//scroll cards
+let SCcards=[...scCard];
+SCcards.forEach((c,i)=>{
+    SCcards[i].addEventListener("mouseover", ()=>{
+        scCard[i].lastElementChild.style.visibility="visible";
+    })
+    scCard[i].addEventListener('mouseout', ()=>{
+        scCard[i].lastElementChild.style.visibility="hidden";
+    })
+})
+
 
 //Light and dark mode
 modeBtn.addEventListener("click", ()=>{
