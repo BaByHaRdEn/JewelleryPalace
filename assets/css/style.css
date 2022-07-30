@@ -173,10 +173,11 @@ body{
 #cover{
     display: flex;
     align-items: center;
+    scroll-behavior: smooth;
 }
 #scroll-cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:flex-start;
     overflow-y: hidden;
     overflow-x:auto;
     flex-wrap:nowrap;
