@@ -164,7 +164,6 @@ body{
 #bsp {
     width:90%;
     height: auto;
-    margin: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -175,20 +174,47 @@ body{
     font-size: xx-large;
     color: rgb(91, 91, 91);
 }
+#cover{
+    display: flex;
+    align-items: center;
+}
 #scroll-cards{
     display: flex;
     justify-content: space-evenly;
     overflow-y: hidden;
     overflow-x:auto;
-    flex-wrap: nowrap;
+    flex-wrap:nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+#scroll-cards::-webkit-scrollbar{
+    -webkit-appearance: none;
 }
 #scroll-cards .sc-card{
-    width: 200px;
-    height: 170px;
+    width: 270px;
+    height: 240px;
     background-color:rgb(227, 226, 226);
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
     flex: 0 0 auto;
     margin-left: 20px;
+}
+#scroll-cards .sc-card img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.icon{
+    position: relative;
+    align-self: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
 }
