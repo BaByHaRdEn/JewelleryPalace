@@ -236,7 +236,7 @@ background-color: thistle;
     width: 90%;
     height: 450px;
     border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.4);
+    background-color:rgba(255, 255, 255, 0.3);
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -260,7 +260,7 @@ background-color: thistle;
 }
 #shero #company-name .larger{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 140px;
+    font-size: 120px;
     font-weight: 700;
     color:red;
     margin-left: 30px;
@@ -292,4 +292,17 @@ background-color: thistle;
 }
 #shero #caption button{
     border: none;
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+    font-size: larger;
 }
