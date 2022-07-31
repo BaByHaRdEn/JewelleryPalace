@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #fff;
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
 /*top-bar*/
@@ -50,7 +50,7 @@ body{
     width: 90%;
     height: auto;
     border-radius: 10px;
-    background-color:rgb(227, 226, 226);
+    background-color:rgba(255, 0, 0, 0.1);
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -102,12 +102,11 @@ body{
 #c-cards .card{
     width: 270px;
     height: 240px;
-    background-color:rgb(227, 226, 226);
+    background-color:rgba(255, 0, 0, 0.1);
     margin-left: 50px;
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
-    transition: all;
 }
 #c-cards .layer{
     position: absolute;
@@ -185,18 +184,27 @@ body{
     margin-right: auto;
     padding-bottom: 30px;
 }
+#scroll-cards::after{
+background-color: thistle;
+}
 #scroll-cards::-webkit-scrollbar{
     -webkit-appearance: none;
 }
 #scroll-cards .sc-card{
     width: 270px;
     height: auto;
-    background-color:rgb(227, 226, 226);
+    background-color:rgba(255, 0, 0, 0.1);
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
     flex: 0 0 auto;
-    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+    margin-left: 30px;
+}
+#scroll-cards .sc-card:hover{
+    width: 280px;
+    height: auto;
+    transform:scale(1, 1.1);
 }
 #scroll-cards .sc-card img{
     width: 200px;
@@ -211,16 +219,77 @@ body{
    margin-bottom: 10px;
    float: right;
    visibility: hidden;
-   background-color: rgb(84, 84, 84);
    color: #fff;
 }
 
 .icon{
     position: relative;
     align-self: center;
-    color: #000;
+    color: #fff;
     border: none;
     outline: none;
     background: none;
     padding: 10px;
+}
+/*Shero*/
+#shero{
+    width: 90%;
+    height: 450px;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+#shero #company-name{
+    width: 33.33%;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+#shero #company-name .large{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(101, 101, 101);
+    margin-left: 30px;
+}
+#shero #company-name .larger{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    color:red;
+    margin-left: 30px;
+}
+
+#shero-img{
+    width: 33.33%;
+    height: auto;
+}
+#shero-img img{
+    width: 35%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+#shero #caption{
+    width: 33.33%;
+    margin-left: 60px;
+    align-self: center;
+    margin-left: 200px;
+}
+#shero #caption p{
+    font-family:allura;
+    font-size: 30px;
+    font-weight: 200;
+    color:#000;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#shero #caption button{
+    border: none;
 }
