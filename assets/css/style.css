@@ -184,9 +184,6 @@ body{
     margin-right: auto;
     padding-bottom: 30px;
 }
-#scroll-cards::after{
-background-color: thistle;
-}
 #scroll-cards::-webkit-scrollbar{
     -webkit-appearance: none;
 }
@@ -221,7 +218,7 @@ background-color: thistle;
    visibility: hidden;
    color: #fff;
 }
-
+/*Scroll buttons*/
 .icon{
     position: relative;
     align-self: center;
@@ -293,7 +290,7 @@ background-color: thistle;
 #shero #caption button{
     border: none;
 }
-
+/*Footer*/
 footer{
     text-align: center;
     margin-top: 50px;
