@@ -41,3 +41,8 @@ function scrollr() {
     let right = document.getElementById("scroll-cards");
     right.scrollBy(-300, 0)
 }
+let viewAll= document.getElementById("VA");
+viewAll.addEventListener("click", ()=>{
+   let vCards= document.querySelectorAll(".va");
+   
+   })
