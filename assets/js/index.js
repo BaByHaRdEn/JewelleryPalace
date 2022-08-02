@@ -43,11 +43,12 @@ function scrollr() {
 }
 let viewAll= document.getElementById("va");
 viewAll.addEventListener("click", ()=>{
-    const boxes = document.querySelectorAll('.va');
+    const allCards = document.querySelectorAll('.va');
 
-for (const box of boxes) {
-  box.classList.toggle(
+for (const cards of allCards) {
+  cards.classList.toggle(
     'va'
   );
 }
+viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    })
