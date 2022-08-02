@@ -58,11 +58,11 @@
     transition: all 0.2s ease-in-out;
     justify-content: space-between;
 }
-/*#earring-cards .er-card:hover{
+#earring-cards .er-card:hover{
     width: 280px;
     height: auto;
-    transform:scale(1, 1.1);
-}*/
+    transform:scaleX(1);
+}
 #earring-cards .er-card img{
     width: 200px;
     height: 200px;
@@ -71,12 +71,32 @@
     margin-right: auto;
     margin-top: 20px;
 }
-.er-card button{
-   margin-right: 10px;
-   margin-bottom: 10px;
-   float: right;
-   visibility: hidden;
+.er-card .card-txt{
+    display: block;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.er-card .card-txt h6{
+    width: 80%;
+    border-radius: 10px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    margin-top:10px ;
+}
+.er-card  button{
    color: #fff;
+   width: 80%;
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 #earring-cards .va{
     display: none;
