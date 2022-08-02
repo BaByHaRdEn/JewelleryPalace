@@ -199,9 +199,7 @@ body{
     margin-left: 30px;
 }
 #scroll-cards .sc-card:hover{
-    width: 280px;
-    height: auto;
-    transform:scale(1, 1.1);
+    transform:scale(1.1, 1.1);
 }
 #scroll-cards .sc-card img{
     width: 200px;
