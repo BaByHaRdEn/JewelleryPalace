@@ -80,7 +80,7 @@
     width: 100%;
     border-radius: 0 0 10px 10px;
     padding-bottom: 10px;
-    background-color: #fff;
+    background-color:transparent;
 }
 .er-card .card-txt .price{
     display: flex;
