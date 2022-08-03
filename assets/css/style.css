@@ -37,6 +37,19 @@ body{
     align-self: center;
     margin-right: 70px;
 }
+#navigation #cart{
+    position: relative;
+}
+#navigation #cartAmount{
+    position: absolute;
+    background-color: red;
+    top: -5px;
+    right: 10px;
+    color: #fff;
+    border-radius: 5px;
+    padding:0px 3px;
+    font-size: small;
+}
 #navigation i{
     color: black;
     width: 23px;
