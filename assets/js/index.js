@@ -4,7 +4,7 @@ const scCard= document.querySelectorAll(".sc-card");
 let scrCards=document.getElementById("scroll-cards");
 let erCard= document.getElementById("earring-cards");
 
-console.log(scrCards)
+
 //categories
 let cards=[...card];
 cards.forEach((c,i)=>{
@@ -44,6 +44,9 @@ function scrollr() {
     let right = document.getElementById("scroll-cards");
     right.scrollBy(-300, 0)
 }
+
+//viewall
+/*
 let viewAll= document.getElementById("va");
 viewAll.addEventListener("click", ()=>{
     const allCards = document.querySelectorAll('.va');
@@ -55,7 +58,7 @@ for (const cards of allCards) {
 }
 viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    })
-
+*/
 
    //Earring cards Details
    let cardDetails=[{
@@ -161,61 +164,51 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
 
 
 
-   let scrcardDetails=[{
+let hCards=[{
     id:1,
+    name: "Silver Earring",
+    price: 200,
     img: "/assets/imgs/er1.png",
-   },
-   {
-    id:2,
-    img: "/assets/imgs/er2.png",
-   },
-   {
-    id:3,
-    img: "/assets/imgs/er3.png",
-   },
-   {
-    id:4,
-    img: "/assets/imgs/er4.png",
-   },
-   {
-    id:5,
-    img: "/assets/imgs/er5.png",
-   },
-   {
-    id:6,
-    img: "/assets/imgs/er6.png",
-   },
-   {
-    id:7,
-    img: "/assets/imgs/er7.png",
-   },
-   {
-    id:8,
-    img: "/assets/imgs/er8.png",
-   },
-   {
-    id:9,
-    img: "/assets/imgs/er9.png",
-   },
-   {
-    id:10,
-    img: "/assets/imgs/er10.png",
-   },]
+    desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+    },
+    {
+        id:1,
+        name: "Silver Earring",
+        price: 200,
+        img: "/assets/imgs/er1.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing." 
+    },{
+        id:1,
+        name: "Silver Earring",
+        price: 200,
+        img: "/assets/imgs/er1.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+    },{
+        id:1,
+        name: "Silver Earring",
+        price: 200,
+        img: "/assets/imgs/er1.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+    }]
 
-
-   let scrCard=()=>{
-    return( scrCards.innerHTML= scrcardDetails.map((x)=>{
-        let {img}=x
+let scrollCards=()=>{
     return(
-        `
+        scrCards.innerHTML=`
         <div class="sc-card">
-                        <div class="card-img">
-                        <img src=${img} alt="">
-                        </div>
-                           <button class="btn btn-danger"><i class="fa fa-cart-plus"></i></button>
-                    </div>
+<div class="card-img">
+<img src=assets/imgs/er1.png alt="">
+</div>
+   <button class="btn btn-danger"><i class="fa fa-cart-plus"></i></button>
+</div>
         `
     )
-    }).join(""));
-   };
-   scrCard();
+};
+
+scrollCards();
+/*
+<div class="sc-card">
+<div class="card-img">
+<img src=assets/imgs/er1.png alt="">
+</div>
+   <button class="btn btn-danger"><i class="fa fa-cart-plus"></i></button>
+</div>*/
