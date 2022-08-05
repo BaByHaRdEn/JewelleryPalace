@@ -62,6 +62,10 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    })
 */
 
+
+   let basket=[];
+
+
    //Earring cards Details
    let cardDetails=[{
     id:1,
@@ -94,28 +98,28 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    {
     id:5,
     name: "Bronze Earring",
-    price: 10,
+    price: 45,
     img: "/assets/imgs/er5.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:6,
     name: "Bronze Earring",
-    price: 10,
+    price: 70,
     img: "/assets/imgs/er6.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:7,
     name: "Bronze Earring",
-    price: 10,
+    price: 50,
     img: "/assets/imgs/er7.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:8,
     name: "Bronze Earring",
-    price: 10,
+    price: 120,
     img: "/assets/imgs/er8.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
@@ -129,7 +133,7 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    {
     id:10,
     name: "Bronze Earring",
-    price: 10,
+    price: 15,
     img: "/assets/imgs/er10.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },]
@@ -165,13 +169,41 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    earringCard();
 
 let increment= (id)=>{
-    console.log(id )
+    let selectedItem=id;
+    let search= basket.find((x)=>x.id === selectedItem);
+
+    if (search === undefined) {
+        basket.push({
+            id: selectedItem,
+            item:1
+        });
+    } else {
+        search.item += 1;
+    }
+    
+
+  //  console.log(basket);
+    update(selectedItem);
 }
 
 
 let decrement= (id)=>{
-    console.log(id )
+    let selectedItem=id;
+    let search= basket.find((x)=>x.id === selectedItem);
+
+    if (search.item === 0) return;
+    else {
+        search.item -= 1;
+    }
+    
+
+    //console.log(basket);
+    update(selectedItem);
 }
 
 
-let update= ()=>{}
+let update= (id)=>{
+    let search= basket.find((x)=>x.id === id);
+
+    document.getElementById(id).innerHTML=search.item;
+}
