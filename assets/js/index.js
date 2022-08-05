@@ -15,16 +15,6 @@ cards.forEach((c,i)=>{
         card[i].firstElementChild.style.display="none";
     })
 })
-//scroll cards
-let SCcards=[...scCard];
-SCcards.forEach((c,i)=>{
-    SCcards[i].addEventListener("mouseover", ()=>{
-        scCard[i].lastElementChild.style.visibility="visible";
-    })
-    scCard[i].addEventListener('mouseout', ()=>{
-        scCard[i].lastElementChild.style.visibility="hidden";
-    })
-})
 
 
 //Light and dark mode
@@ -44,6 +34,18 @@ function scrollr() {
     let right = document.getElementById("scroll-cards");
     right.scrollBy(-300, 0)
 }
+
+//scroll cards
+let SCcards=[...scCard];
+SCcards.forEach((c,i)=>{
+    SCcards[i].addEventListener("mouseover", ()=>{
+        scCard[i].lastElementChild.style.visibility="visible";
+    })
+    scCard[i].addEventListener('mouseout', ()=>{
+        scCard[i].lastElementChild.style.visibility="hidden";
+    })
+})
+
 
 //viewall
 /*
@@ -162,53 +164,3 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    };
    earringCard();
 
-
-
-let hCards=[{
-    id:1,
-    name: "Silver Earring",
-    price: 200,
-    img: "/assets/imgs/er1.png",
-    desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-        id:1,
-        name: "Silver Earring",
-        price: 200,
-        img: "/assets/imgs/er1.png",
-        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing." 
-    },{
-        id:1,
-        name: "Silver Earring",
-        price: 200,
-        img: "/assets/imgs/er1.png",
-        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },{
-        id:1,
-        name: "Silver Earring",
-        price: 200,
-        img: "/assets/imgs/er1.png",
-        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    }]
-
-let scrollCards=()=>{
-    return(
-        scrCards.innerHTML=`
-        <div class="sc-card">
-<div class="card-img">
-<img src=assets/imgs/er1.png alt="">
-</div>
-   <button class="btn btn-danger"><i class="fa fa-cart-plus"></i></button>
-</div>
-        `
-    )
-};
-
-scrollCards();
-/*
-<div class="sc-card">
-<div class="card-img">
-<img src=assets/imgs/er1.png alt="">
-</div>
-   <button class="btn btn-danger"><i class="fa fa-cart-plus"></i></button>
-</div>*/

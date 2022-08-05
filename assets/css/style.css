@@ -209,7 +209,7 @@ body{
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
     flex: 0 0 auto;
     transition: all 0.2s ease-in-out;
-    margin-left: 30px;
+    gap: 20px;
 }
 #scroll-cards .sc-card:hover{
     transform:scale(1.1, 1.1);
