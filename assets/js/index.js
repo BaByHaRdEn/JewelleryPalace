@@ -140,7 +140,7 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
         let {id, name, price, img, desc}=x
     return(
         `
-        <div class="er-card">
+        <div id=er-card-${id} class="er-card">
                     <div class="card-img">
                     <img src=${img} alt="">
                     </div>
@@ -150,9 +150,9 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
                         <div class="price">
                             <h2 class="dollar">&dollar; ${price}</h2>
                             <div class="quantity">
-                                <i class="fa fa-minus"></i>
-                                <div class="amount">0</div>
-                                <i class="fa fa-plus"></i>
+                                <i onclick="decrement(${id})" class="fa fa-minus"></i>
+                                <div id=${id} class="amount">0</div>
+                                <i onclick="increment(${id})" class="fa fa-plus"></i>
                             </div>
                         </div>
                         <button class="btn btn-danger"><i class="fa fa-cart-plus"></i> Add to Cart</button>
@@ -164,3 +164,14 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    };
    earringCard();
 
+let increment= (id)=>{
+    console.log(id )
+}
+
+
+let decrement= (id)=>{
+    console.log(id )
+}
+
+
+let update= ()=>{}
