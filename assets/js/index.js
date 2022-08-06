@@ -159,7 +159,7 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
                                 <i onclick="increment(${id})" class="fa fa-plus"></i>
                             </div>
                         </div>
-                        <button class="btn btn-danger"><i class="fa fa-cart-plus"></i> Add to Cart</button>
+                        <button class="btn btn-danger" onclick="carting()" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
                     </div>
                 </div>
         `
@@ -205,5 +205,11 @@ let decrement= (id)=>{
 let update= (id)=>{
     let search= basket.find((x)=>x.id === id);
 
-    document.getElementById(id).innerHTML=search.item;
+    document.getElementById(id).innerHTML=search.item
+}
+
+let carting= (id)=>{
+   let cartIcon=  document.getElementById("cartAmount");
+   cartIcon.innerHTML =+1;
+
 }
