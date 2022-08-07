@@ -1,6 +1,6 @@
 
     let nkCard= document.getElementById("necklace-cards");
-    let basket=JSON.parse(localStorage.getItem("data")) || [];
+    let nkBasket=JSON.parse(localStorage.getItem("data")) || [];
  
  
     //Necklace cards Details
@@ -79,7 +79,7 @@
     let necklaceCard=()=>{
      return( nkCard.innerHTML= nkCardDetails.map((x)=>{
          let {id, name, price, img, desc}=x;
-         let search= basket.find((x)=> x.id === id) || [];
+         let search= nkBasket.find((x)=> x.id === id) || [];
      return(
          `
          <div id=nk-card-${id} class="nk-card">
@@ -108,10 +108,10 @@
  
  let increment= (id)=>{
      let selectedItem=id;
-     let search= basket.find((x)=>x.id === selectedItem);
+     let search= nkBasket.find((x)=>x.id === selectedItem);
  
      if (search === undefined) {
-         basket.push({
+         nkBasket.push({
              id: selectedItem,
              item:1
          });
@@ -119,14 +119,14 @@
          search.item += 1;
      }
      
-     localStorage.setItem("data", JSON.stringify(basket));
+     localStorage.setItem("data", JSON.stringify(nkBasket));
      update(selectedItem);
  }
  
  
  let decrement= (id)=>{
      let selectedItem=id;
-     let search= basket.find((x)=>x.id === selectedItem);
+     let search= nkBasket.find((x)=>x.id === selectedItem);
  
      if(search === undefined) return
      else if (search.item === 0) return;
@@ -136,23 +136,23 @@
      
      update(selectedItem);
  
-     basket= basket.filter((x)=> x.item !== 0);
+     nkBasket= nkBasket.filter((x)=> x.item !== 0);
  
-     localStorage.setItem("data", JSON.stringify(basket));
+     localStorage.setItem("data", JSON.stringify(nkBasket));
  }
  
  
  let update= (id)=>{
-     let search= basket.find((x)=>x.id === id);
+     let search= nkBasket.find((x)=>x.id === id);
  
      document.getElementById(id).innerHTML=search.item
  
-     carting();
+     addToCart();
  }
  
- let carting= (id)=>{
+ let addToCart= (y)=>{
     let cartIcon=  document.getElementById("cartAmount");
-    cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
+    cartIcon.innerHTML = nkBasket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
  
  }
- carting();
+ addToCart();
