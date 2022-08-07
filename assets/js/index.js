@@ -63,7 +63,7 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
 */
 
 
-   let basket=[];
+   let basket=JSON.parse(localStorage.getItem("data")) || [];
 
 
    //Earring cards Details
@@ -159,7 +159,7 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
                                 <i onclick="increment(${id})" class="fa fa-plus"></i>
                             </div>
                         </div>
-                        <button class="btn btn-danger" onclick="carting()" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
+                        <button class="btn btn-danger" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
                     </div>
                 </div>
         `
@@ -181,8 +181,7 @@ let increment= (id)=>{
         search.item += 1;
     }
     
-
-  //  console.log(basket);
+    localStorage.setItem("data", JSON.stringify(basket));
     update(selectedItem);
 }
 
@@ -196,8 +195,7 @@ let decrement= (id)=>{
         search.item -= 1;
     }
     
-
-    //console.log(basket);
+    localStorage.setItem("data", JSON.stringify(basket));
     update(selectedItem);
 }
 
@@ -206,10 +204,12 @@ let update= (id)=>{
     let search= basket.find((x)=>x.id === id);
 
     document.getElementById(id).innerHTML=search.item
+
+    carting();
 }
 
 let carting= (id)=>{
    let cartIcon=  document.getElementById("cartAmount");
-   cartIcon.innerHTML =+1;
+   cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
 
 }
