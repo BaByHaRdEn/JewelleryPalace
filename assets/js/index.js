@@ -141,7 +141,8 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
    //Card Return Function
    let earringCard=()=>{
     return( erCard.innerHTML= cardDetails.map((x)=>{
-        let {id, name, price, img, desc}=x
+        let {id, name, price, img, desc}=x;
+        let search= basket.find((x)=> x.id === id) || [];
     return(
         `
         <div id=er-card-${id} class="er-card">
@@ -155,7 +156,7 @@ viewAll.innerHTML="Show Less <i class='fa fa-angle-double-right'></i>"
                             <h2 class="dollar">&dollar; ${price}</h2>
                             <div class="quantity">
                                 <i onclick="decrement(${id})" class="fa fa-minus"></i>
-                                <div id=${id} class="amount">0</div>
+                                <div id=${id} class="amount">${search.item === undefined ?0 : search.item}</div>
                                 <i onclick="increment(${id})" class="fa fa-plus"></i>
                             </div>
                         </div>
@@ -190,7 +191,7 @@ let decrement= (id)=>{
     let selectedItem=id;
     let search= basket.find((x)=>x.id === selectedItem);
 
-    if (search.item === 0) return;
+    if (search.item === 0 || search === undefined) return;
     else {
         search.item -= 1;
     }
@@ -213,3 +214,4 @@ let carting= (id)=>{
    cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
 
 }
+carting();
