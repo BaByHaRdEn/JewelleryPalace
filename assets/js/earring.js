@@ -4,80 +4,80 @@
 
 
    //Earring cards Details
-   let cardDetails=[{
+   let erCardDetails=[{
     id:1,
     name: "Silver Earring",
     price: 200,
-    img: "/assets/imgs/er1.png",
+    img: "/assets/imgs/erimg/er1.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:2,
     name: "Gold-plated Earring",
     price: 100,
-    img: "/assets/imgs/er2.png",
+    img: "/assets/imgs/erimg/er2.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:3,
     name: "Solid Gold",
     price: 30,
-    img: "/assets/imgs/er3.png",
+    img: "/assets/imgs/erimg/er3.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:4,
     name: "Bronze Earring",
     price: 10,
-    img: "/assets/imgs/er4.png",
+    img: "/assets/imgs/erimg/er4.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:5,
     name: "Bronze Earring",
     price: 45,
-    img: "/assets/imgs/er5.png",
+    img: "/assets/imgs/erimg/er5.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:6,
     name: "Bronze Earring",
     price: 70,
-    img: "/assets/imgs/er6.png",
+    img: "/assets/imgs/erimg/er6.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:7,
     name: "Bronze Earring",
     price: 50,
-    img: "/assets/imgs/er7.png",
+    img: "/assets/imgs/erimg/er7.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:8,
     name: "Bronze Earring",
     price: 120,
-    img: "/assets/imgs/er8.png",
+    img: "/assets/imgs/erimg/er8.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:9,
     name: "Bronze Earring",
     price: 10,
-    img: "/assets/imgs/er9.png",
+    img: "/assets/imgs/erimg/er9.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
     id:10,
     name: "Bronze Earring",
     price: 15,
-    img: "/assets/imgs/er10.png",
+    img: "/assets/imgs/erimg/er10.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },]
 
    //Card Return Function
    let earringCard=()=>{
-    return( erCard.innerHTML= cardDetails.map((x)=>{
+    return( erCard.innerHTML= erCardDetails.map((x)=>{
         let {id, name, price, img, desc}=x;
         let search= basket.find((x)=> x.id === id) || [];
     return(

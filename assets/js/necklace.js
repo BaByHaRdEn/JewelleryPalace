@@ -1,88 +1,88 @@
 
-    let erCard= document.getElementById("earring-cards");
+    let nkCard= document.getElementById("necklace-cards");
     let basket=JSON.parse(localStorage.getItem("data")) || [];
  
  
-    //Earring cards Details
-    let cardDetails=[{
+    //Necklace cards Details
+    let nkCardDetails=[{
      id:1,
      name: "Silver Earring",
      price: 200,
-     img: "/assets/imgs/er1.png",
+     img: "/assets/imgs/nkimg/nk1.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:2,
      name: "Gold-plated Earring",
      price: 100,
-     img: "/assets/imgs/er2.png",
+     img: "/assets/imgs/nkimg/nk2.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:3,
      name: "Solid Gold",
      price: 30,
-     img: "/assets/imgs/er3.png",
+     img: "/assets/imgs/nkimg/nk3.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:4,
      name: "Bronze Earring",
      price: 10,
-     img: "/assets/imgs/er4.png",
+     img: "/assets/imgs/nkimg/nk4.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:5,
      name: "Bronze Earring",
      price: 45,
-     img: "/assets/imgs/er5.png",
+     img: "/assets/imgs/nkimg/nk5.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:6,
      name: "Bronze Earring",
      price: 70,
-     img: "/assets/imgs/er6.png",
+     img: "/assets/imgs/nkimg/nk6.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:7,
      name: "Bronze Earring",
      price: 50,
-     img: "/assets/imgs/er7.png",
+     img: "/assets/imgs/nkimg/nk7.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:8,
      name: "Bronze Earring",
      price: 120,
-     img: "/assets/imgs/er8.png",
+     img: "/assets/imgs/nkimg/nk8.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:9,
      name: "Bronze Earring",
      price: 10,
-     img: "/assets/imgs/er9.png",
+     img: "/assets/imgs/nkimg/nk9.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
      id:10,
      name: "Bronze Earring",
      price: 15,
-     img: "/assets/imgs/er10.png",
+     img: "/assets/imgs/nkimg/nk10.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },]
  
     //Card Return Function
-    let earringCard=()=>{
-     return( erCard.innerHTML= cardDetails.map((x)=>{
+    let necklaceCard=()=>{
+     return( nkCard.innerHTML= nkCardDetails.map((x)=>{
          let {id, name, price, img, desc}=x;
          let search= basket.find((x)=> x.id === id) || [];
      return(
          `
-         <div id=er-card-${id} class="er-card">
+         <div id=nk-card-${id} class="nk-card">
                      <div class="card-img">
                      <img src=${img} alt="">
                      </div>
@@ -104,7 +104,7 @@
      )
      }).join(""));
     };
-    earringCard();
+    necklaceCard();
  
  let increment= (id)=>{
      let selectedItem=id;
