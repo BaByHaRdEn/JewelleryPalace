@@ -1,7 +1,7 @@
 
+
     let nkCard= document.getElementById("necklace-cards");
-    let nkBasket=JSON.parse(localStorage.getItem("data")) || [];
- 
+    let nkBasket=JSON.parse(localStorage.getItem("nkdata")) || [];
  
     //Necklace cards Details
     let nkCardDetails=[{
@@ -119,7 +119,7 @@
          search.item += 1;
      }
      
-     localStorage.setItem("data", JSON.stringify(nkBasket));
+     localStorage.setItem("nkdata", JSON.stringify(nkBasket));
      update(selectedItem);
  }
  
@@ -138,7 +138,7 @@
  
      nkBasket= nkBasket.filter((x)=> x.item !== 0);
  
-     localStorage.setItem("data", JSON.stringify(nkBasket));
+     localStorage.setItem("nkdata", JSON.stringify(nkBasket));
  }
  
  
@@ -147,12 +147,12 @@
  
      document.getElementById(id).innerHTML=search.item
  
-     addToCart();
+     nkCarting();
  }
  
- let addToCart= (y)=>{
+ let nkCarting= (y)=>{
     let cartIcon=  document.getElementById("cartAmount");
     cartIcon.innerHTML = nkBasket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
  
  }
- addToCart();
+ nkCarting();
