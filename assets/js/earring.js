@@ -1,6 +1,6 @@
 
     let erCard= document.getElementById("earring-cards");
-   let basket=JSON.parse(localStorage.getItem("data")) || [];
+   let erbasket=JSON.parse(localStorage.getItem("data")) || [];
 
 
    //Earring cards Details
@@ -79,7 +79,7 @@
    let earringCard=()=>{
     return( erCard.innerHTML= erCardDetails.map((x)=>{
         let {id, name, price, img, desc}=x;
-        let search= basket.find((x)=> x.id === id) || [];
+        let search= erbasket.find((x)=> x.id === id) || [];
     return(
         `
         <div id=er-card-${id} class="er-card">
@@ -108,10 +108,10 @@
 
 let increment= (id)=>{
     let selectedItem=id;
-    let search= basket.find((x)=>x.id === selectedItem);
+    let search= erbasket.find((x)=>x.id === selectedItem);
 
     if (search === undefined) {
-        basket.push({
+        erbasket.push({
             id: selectedItem,
             item:1
         });
@@ -119,14 +119,14 @@ let increment= (id)=>{
         search.item += 1;
     }
     
-    localStorage.setItem("data", JSON.stringify(basket));
+    localStorage.setItem("data", JSON.stringify(erbasket));
     update(selectedItem);
 }
 
 
 let decrement= (id)=>{
     let selectedItem=id;
-    let search= basket.find((x)=>x.id === selectedItem);
+    let search= erbasket.find((x)=>x.id === selectedItem);
 
     if(search === undefined) return
     else if (search.item === 0) return;
@@ -136,14 +136,14 @@ let decrement= (id)=>{
     
     update(selectedItem);
 
-    basket= basket.filter((x)=> x.item !== 0);
+    erbasket= erbasket.filter((x)=> x.item !== 0);
 
-    localStorage.setItem("data", JSON.stringify(basket));
+    localStorage.setItem("data", JSON.stringify(erbasket));
 }
 
 
 let update= (id)=>{
-    let search= basket.find((x)=>x.id === id);
+    let search= erbasket.find((x)=>x.id === id);
 
     document.getElementById(id).innerHTML=search.item
 
@@ -152,7 +152,7 @@ let update= (id)=>{
 
 let carting= (id)=>{
    let cartIcon=  document.getElementById("cartAmount");
-   cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
+   cartIcon.innerHTML = erbasket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
 
 }
 carting();

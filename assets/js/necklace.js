@@ -1,74 +1,74 @@
 
 
     let nkCard= document.getElementById("necklace-cards");
-    let nkBasket=JSON.parse(localStorage.getItem("nkdata")) || [];
+    let nkBasket=JSON.parse(localStorage.getItem("data")) || [];
  
     //Necklace cards Details
     let nkCardDetails=[{
-     id:1,
+     id:11,
      name: "Silver Earring",
      price: 200,
      img: "/assets/imgs/nkimg/nk1.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:2,
+     id:21,
      name: "Gold-plated Earring",
      price: 100,
      img: "/assets/imgs/nkimg/nk2.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:3,
+     id:31,
      name: "Solid Gold",
      price: 30,
      img: "/assets/imgs/nkimg/nk3.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:4,
+     id:41,
      name: "Bronze Earring",
      price: 10,
      img: "/assets/imgs/nkimg/nk4.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:5,
+     id:51,
      name: "Bronze Earring",
      price: 45,
      img: "/assets/imgs/nkimg/nk5.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:6,
+     id:61,
      name: "Bronze Earring",
      price: 70,
      img: "/assets/imgs/nkimg/nk6.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:7,
+     id:71,
      name: "Bronze Earring",
      price: 50,
      img: "/assets/imgs/nkimg/nk7.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:8,
+     id:81,
      name: "Bronze Earring",
      price: 120,
      img: "/assets/imgs/nkimg/nk8.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:9,
+     id:91,
      name: "Bronze Earring",
      price: 10,
      img: "/assets/imgs/nkimg/nk9.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:10,
+     id:101,
      name: "Bronze Earring",
      price: 15,
      img: "/assets/imgs/nkimg/nk10.png",
@@ -119,7 +119,7 @@
          search.item += 1;
      }
      
-     localStorage.setItem("nkdata", JSON.stringify(nkBasket));
+     localStorage.setItem("data", JSON.stringify(nkBasket));
      update(selectedItem);
  }
  
@@ -138,7 +138,7 @@
  
      nkBasket= nkBasket.filter((x)=> x.item !== 0);
  
-     localStorage.setItem("nkdata", JSON.stringify(nkBasket));
+     localStorage.setItem("data", JSON.stringify(nkBasket));
  }
  
  

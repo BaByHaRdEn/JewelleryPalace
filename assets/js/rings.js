@@ -1,74 +1,74 @@
 
     let rnCard= document.getElementById("rings-card");
-    let rnBasket= JSON.parse(localStorage.getItem("rndata")) || [];
+    let rnBasket= JSON.parse(localStorage.getItem("data")) || [];
  
  
     //Ring cards Details
     let rnCardDetails=[{
-     id:1,
+     id:11,
      name: "Silver Earring",
      price: 200,
      img: "/assets/imgs/rngimg/rn1.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:2,
+     id:12,
      name: "Gold-plated Earring",
      price: 100,
      img: "/assets/imgs/rngimg/rn2.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:3,
+     id:13,
      name: "Solid Gold",
      price: 30,
      img: "/assets/imgs/rngimg/rn3.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:4,
+     id:14,
      name: "Bronze Earring",
      price: 10,
      img: "/assets/imgs/rngimg/rn4.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:5,
+     id:15,
      name: "Bronze Earring",
      price: 45,
      img: "/assets/imgs/rngimg/rn5.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:6,
+     id:16,
      name: "Bronze Earring",
      price: 70,
      img: "/assets/imgs/rngimg/rn6.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:7,
+     id:17,
      name: "Bronze Earring",
      price: 50,
      img: "/assets/imgs/rngimg/rn7.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:8,
+     id:18,
      name: "Bronze Earring",
      price: 120,
      img: "/assets/imgs/rngimg/rn8.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:9,
+     id:19,
      name: "Bronze Earring",
      price: 10,
      img: "/assets/imgs/rngimg/rn9.png",
      desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
     },
     {
-     id:10,
+     id:110,
      name: "Bronze Earring",
      price: 15,
      img: "/assets/imgs/rngimg/rn10.png",
@@ -116,7 +116,7 @@
         }else{
             search.item +=1;
         }
-        localStorage.setItem("rndata", JSON.stringify(rnBasket));
+        localStorage.setItem("data", JSON.stringify(rnBasket));
         update(selectedItem);
     }
     let decrement=(id)=>{
@@ -132,7 +132,7 @@
 
         rnBasket=rnBasket.filter((x)=> x.item !== 0);
 
-        localStorage.setItem("rndata", JSON.stringify(rnBasket));
+        localStorage.setItem("data", JSON.stringify(rnBasket));
     }
 
     let update=(id)=>{

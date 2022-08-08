@@ -47,11 +47,11 @@ SCcards.forEach((c,i)=>{
 })
 
 
-let basket=JSON.parse(localStorage.getItem("data")) || [];
+let cart=JSON.parse(localStorage.getItem("data")) || [];
 
 let carting= (id)=>{
     let cartIcon=  document.getElementById("cartAmount");
-    cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
+    cartIcon.innerHTML = cart.map((x)=>x.item).reduce((x,y)=> x + y, 0);
  
  }
  carting();
