@@ -145,6 +145,6 @@
 
     let rnCarting=()=>{
         let cardAmount = document.getElementById("cartAmount");
-        cardAmount.innerHTML=rnBasket.map((x)=> x.item).reduce((x,y)=> x + y, 0)
+        cardAmount.innerHTML=rnBasket.length;
     }
     rnCarting();

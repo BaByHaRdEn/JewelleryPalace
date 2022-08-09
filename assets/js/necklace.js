@@ -5,7 +5,7 @@
  
     //Necklace cards Details
     let nkCardDetails=[{
-     id:11,
+     id:111,
      name: "Silver Earring",
      price: 200,
      img: "/assets/imgs/nkimg/nk1.png",
@@ -150,9 +150,9 @@
      nkCarting();
  }
  
- let nkCarting= (y)=>{
+ let nkCarting= ()=>{
     let cartIcon=  document.getElementById("cartAmount");
-    cartIcon.innerHTML = nkBasket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
+    cartIcon.innerHTML = nkBasket.length
  
  }
  nkCarting();

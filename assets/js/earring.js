@@ -145,14 +145,15 @@ let decrement= (id)=>{
 let update= (id)=>{
     let search= erbasket.find((x)=>x.id === id);
 
-    document.getElementById(id).innerHTML=search.item
+    document.getElementById(id).innerHTML=search.item;
 
-    carting();
+    erCarting()
+
 }
 
-let carting= (id)=>{
+let erCarting= ()=>{
    let cartIcon=  document.getElementById("cartAmount");
-   cartIcon.innerHTML = erbasket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
+   cartIcon.innerHTML = erbasket.length;
 
 }
-carting();
+erCarting();
