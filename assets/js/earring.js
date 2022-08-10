@@ -26,7 +26,7 @@
                                 <i onclick="increment(${id})" class="fa fa-plus"></i>
                             </div>
                         </div>
-                        <button class="btn btn-danger" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
+                        <button class="btn btn-danger" onclick="erCarting()"><i class="fa fa-cart-plus"></i> Add to Cart</button>
                     </div>
                 </div>
         `
@@ -75,8 +75,6 @@ let update= (id)=>{
     let search= erbasket.find((x)=>x.id === id);
 
     document.getElementById(id).innerHTML=search.item;
-
-    erCarting()
 
 }
 

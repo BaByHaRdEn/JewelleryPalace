@@ -26,7 +26,7 @@
                                  <i onclick="increment(${id})" class="fa fa-plus"></i>
                              </div>
                          </div>
-                         <button class="btn btn-danger" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
+                         <button class="btn btn-danger" onclick="nkCarting()" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
                      </div>
                  </div>
          `
@@ -76,12 +76,12 @@
  
      document.getElementById(id).innerHTML=search.item
  
-     nkCarting();
+     
  }
  
  let nkCarting= ()=>{
     let cartIcon=  document.getElementById("cartAmount");
-    cartIcon.innerHTML = nkBasket.length
+    cartIcon.innerHTML = nkBasket.length;
  
  }
  nkCarting();

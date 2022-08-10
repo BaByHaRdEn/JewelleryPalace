@@ -24,7 +24,7 @@
                         <i onclick="increment(${id})" class="fa fa-plus"></i>
                     </div>
                 </div>
-                <button class="btn btn-danger" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
+                <button class="btn btn-danger" onclick="rnCarting()" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
             </div>
         </div>
             `)
@@ -69,7 +69,7 @@
  
         document.getElementById(id).innerHTML=search.item;
 
-        rnCarting();
+       
     }
 
     let rnCarting=()=>{
