@@ -3,78 +3,7 @@
     let nkCard= document.getElementById("necklace-cards");
     let nkBasket=JSON.parse(localStorage.getItem("data")) || [];
  
-    //Necklace cards Details
-    let nkCardDetails=[{
-     id:111,
-     name: "Silver Earring",
-     price: 200,
-     img: "/assets/imgs/nkimg/nk1.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:21,
-     name: "Gold-plated Earring",
-     price: 100,
-     img: "/assets/imgs/nkimg/nk2.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:31,
-     name: "Solid Gold",
-     price: 30,
-     img: "/assets/imgs/nkimg/nk3.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:41,
-     name: "Bronze Earring",
-     price: 10,
-     img: "/assets/imgs/nkimg/nk4.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:51,
-     name: "Bronze Earring",
-     price: 45,
-     img: "/assets/imgs/nkimg/nk5.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:61,
-     name: "Bronze Earring",
-     price: 70,
-     img: "/assets/imgs/nkimg/nk6.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:71,
-     name: "Bronze Earring",
-     price: 50,
-     img: "/assets/imgs/nkimg/nk7.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:81,
-     name: "Bronze Earring",
-     price: 120,
-     img: "/assets/imgs/nkimg/nk8.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:91,
-     name: "Bronze Earring",
-     price: 10,
-     img: "/assets/imgs/nkimg/nk9.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:101,
-     name: "Bronze Earring",
-     price: 15,
-     img: "/assets/imgs/nkimg/nk10.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },]
- 
+   
     //Card Return Function
     let necklaceCard=()=>{
      return( nkCard.innerHTML= nkCardDetails.map((x)=>{

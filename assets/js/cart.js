@@ -24,14 +24,13 @@ let carting= ()=>{
     if (cart.length !== 0) {
         return cartItems.innerHTML= cart.map((x)=>{
             let {id, item}=x;
-            let search =cart.find((x)=> x.id == id);
-            console.log(search)
+            let search =cartData.find((x)=> x.id == id) || [];
             return `
             <div class=" cart-item">
-            <img src="" />
+            <img width=150px src=${search.img} />
             </div>
             `
-        })
+        }).join("")
     } else {
         cartItems.innerHTML =``;
         checkout.innerHTML= `
