@@ -27,7 +27,7 @@ let carting= ()=>{
             let search =cartData.find((x)=> x.id == id) || [];
             return `
             <div class="cart-item">
-            <img width=100px src=${search.img} />
+            <img width=120px src=${search.img} />
             <div class="card-details">
             <div class="title-x">
             <h5>${search.name}</h5>
@@ -136,7 +136,7 @@ let TotalAmount = () => {
       return (checkout.innerHTML = `
       <h2>Total: $ ${amount}</h2>
       <p onclick="clearCart()" class="clear-cart"><i class="fa fa-trash"></i>Empty Cart</p>
-      <button class="btn checkout">Checkout </button>
+      <button class="btn checkout"><i class=" fa fa-check"></i>Checkout </button>
       `);
     } else return;
   };
