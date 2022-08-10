@@ -1,4 +1,4 @@
-let cartItems= document.getElementById("cart-Items");
+let cartItems= document.getElementById("cart-items");
 let checkout= document.getElementById("checkout");
 const modeBtn= document.getElementById("night-mode-toggle")
 
@@ -26,8 +26,22 @@ let carting= ()=>{
             let {id, item}=x;
             let search =cartData.find((x)=> x.id == id) || [];
             return `
-            <div class=" cart-item">
-            <img width=150px src=${search.img} />
+            <div class="cart-item">
+            <img width=100px src=${search.img} />
+            <div class="card-details">
+            <h5>${search.name}</h5>
+            <i class="fa fa-trash" aria-hidden="true"></i>
+            <div class="price-qty-x"> 
+            <div class="qty">
+            <i class="fa fa-minus"></i>
+            <div class="amount">0</div>
+            <i class="fa fa-plus"></i>
+            </div>
+            <div class="price-x">
+            <h5> &dollar; ${search.price}</h5>
+            </div>
+            </div>
+            </div>
             </div>
             `
         }).join("")
