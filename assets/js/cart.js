@@ -1,6 +1,8 @@
 let cartItems= document.getElementById("cart-items");
 let checkout= document.getElementById("checkout");
 const modeBtn= document.getElementById("night-mode-toggle")
+const scCard= document.querySelectorAll(".sc-card");
+let scrCards=document.getElementById("scroll-cards");
 
 
  //Light and dark mode
@@ -143,3 +145,23 @@ let TotalAmount = () => {
   
   TotalAmount();
   
+  function scrolll() {
+    let left = document.getElementById("scroll-cards");
+    left.scrollBy(300, 0)
+}
+
+function scrollr() {
+    let right = document.getElementById("scroll-cards");
+    right.scrollBy(-300, 0)
+}
+
+//scroll cards
+let SCcards=[...scCard];
+SCcards.forEach((c,i)=>{
+    SCcards[i].addEventListener("mouseover", ()=>{
+        scCard[i].lastElementChild.style.visibility="visible";
+    })
+    scCard[i].addEventListener('mouseout', ()=>{
+        scCard[i].lastElementChild.style.visibility="hidden";
+    })
+})

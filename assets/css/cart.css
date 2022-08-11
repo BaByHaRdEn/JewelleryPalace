@@ -101,3 +101,79 @@
     width: 25%;
     display: block;
 }
+
+/*Best Selling Products*/
+#bsp {
+    width:90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bsp header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(110, 54, 54);
+}
+#cover{
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+#scroll-cards{
+    display: flex;
+    justify-content:flex-start;
+    overflow-y: hidden;
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+#scroll-cards::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+#scroll-cards .sc-card{
+    width: 270px;
+    height: auto;
+    background-color:rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+    flex: 0 0 auto;
+    transition: all 0.2s ease-in-out;
+    gap: 20px;
+}
+#scroll-cards .sc-card:hover{
+    transform:scale(1.1, 1.1);
+}
+#scroll-cards .sc-card img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.sc-card button{
+   margin-right: 10px;
+   margin-bottom: 10px;
+   float: right;
+   visibility: hidden;
+   color: #fff;
+}
+.sc-card button a{
+    text-decoration: none;
+    color: #fff;
+}
+/*Scroll buttons*/
+.icon{
+    position: relative;
+    align-self: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+}

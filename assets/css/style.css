@@ -232,6 +232,10 @@ body{
    visibility: hidden;
    color: #fff;
 }
+.sc-card button a{
+    text-decoration: none;
+    color: #fff;
+}
 /*Scroll buttons*/
 .icon{
     position: relative;
