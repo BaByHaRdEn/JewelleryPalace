@@ -3,6 +3,10 @@
     let stdCards= document.getElementById("studs-cards");
     let stdBasket=JSON.parse(localStorage.getItem("data")) || [];
  
+    function goBack() {
+        window.history.back()
+      }
+   
    
     //Card Return Function
     let studCards=()=>{

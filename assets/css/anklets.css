@@ -1,12 +1,12 @@
 /*Earring Page*/
-#earrings{
+#anklets{
     width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
 }
-#earrings header{
+#anklets header{
     font-size: xx-large;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -34,12 +34,10 @@
     margin-top: 10px;
     font-weight: 500;
 }
-#products header a{
-    text-decoration: none;
-    margin-top: 10px;
-    font-weight: 500;
+#products header button{
+ text-decoration: none;
 }
-#earring-cards{
+#anklet-cards{
     display: grid;
     grid-template-columns: repeat(5, 223px);
     gap: 45px;
@@ -50,14 +48,14 @@
 }
 /*
 @media only screen and (max-width: 1200px) {
-    #earring-cards{
+    #anklet-cards{
         grid-template-columns: repeat(4, 223px);
     }
 }*/
-#earring-cards::-webkit-scrollbar{
+#anklet-cards::-webkit-scrollbar{
     -webkit-appearance: none;
 }
-#earring-cards .er-card{
+#anklet-cards .ank-card{
     width: 250px;
     height: auto;
     background-color:rgba(255, 255, 255, 0.3);
@@ -69,69 +67,68 @@
     justify-content: space-between;
     border: 2px solid rgb(165, 165, 165);
 }
-#earring-cards .er-card:hover{
+#anklet-cards .ank-card:hover{
     transform:scale(1.1, 1.1);
 }
-#earring-cards .er-card img{
-    width: 240PX;
+#anklet-cards .ank-card img{
+    width: 100%;
     height: 220px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    border-radius: 10px 10px 0px 0px;
+    background-color: #fff;
 }
-.er-card .card-txt{
+.ank-card .card-txt{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 10px;
     gap: 5px;
 }
-.er-card .card-txt p{
+.ank-card .card-txt p{
     font-size: small;
     font-family: serif;
 }
-.er-card .card-txt h3{
+.ank-card .card-txt h3{
     font-size: large;
     font-family:monospace ;
     font-weight: 600;
 }
-.er-card .card-txt .price{
+.ank-card .card-txt .price{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.er-card .card-txt .price h2{
+.ank-card .card-txt .price h2{
     font-size: large;
     font-weight: 300;
     font-family:fantasy;
     align-self: center;
 }
-.er-card .card-txt .price .quantity{
+.ank-card .card-txt .price .quantity{
     display: flex;
     gap: 8px;
     padding: 0px 10px;
 }
-.er-card .card-txt .price .quantity i{
+.ank-card .card-txt .price .quantity i{
     font-weight: 700;
     font-size: small;
     padding: 0;
     align-self: center;
 }
-.er-card .card-txt .price .quantity  .amount{
+.ank-card .card-txt .price .quantity  .amount{
     border: 1px solid #000;
     padding:0 5px;
     background-color: #fff;
 }
 /*
-.er-card .card-txt .price .quantity .fa-minus{
+.ank-card .card-txt .price .quantity .fa-minus{
     color: red;
 }
-.er-card .card-txt .price .quantity .fa-plus{
+.ank-card .card-txt .price .quantity .fa-plus{
     color: green;
 }*/
-.er-card  button{
+.ank-card  button{
    color: #fff;
    width: 95%;
    text-align: center;
@@ -139,7 +136,7 @@
    margin-left: auto;
    margin-right: auto;
 }
-#earring-cards .va{
+#anklet-cards .va{
     display: none;
 }
 #va{

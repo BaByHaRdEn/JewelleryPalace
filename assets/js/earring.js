@@ -3,6 +3,10 @@
    let erbasket=JSON.parse(localStorage.getItem("data")) || [];
 
 
+   function goBack() {
+    window.history.back()
+  }
+
  
    //Card Return Function
    let earringCard=()=>{

@@ -34,11 +34,9 @@
     margin-top: 10px;
     font-weight: 500;
 }
-#products header a{
+#products header button{
     text-decoration: none;
-    margin-top: 10px;
-    font-weight: 500;
-}
+   }
 #rings-card{
     display: grid;
     grid-template-columns: repeat(5, 223px);
@@ -73,13 +71,12 @@
     transform:scale(1.1, 1.1);
 }
 #rings-card .rn-cards img{
-    width: 240PX;
+    width: 100%;
     height: 220px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    border-radius: 10px 10px 0px 0px;
+    background-color: #fff;
 }
 .rn-cards .card-txt{
     display: flex;

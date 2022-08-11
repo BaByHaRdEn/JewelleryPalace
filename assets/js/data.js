@@ -236,7 +236,7 @@
          id:"std3",
          name: "Solid Gold",
          price: 30,
-         img: "/assets/imgs/stdimg/std3.jpg",
+         img: "/assets/imgs/stdimg/std3.png",
          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
         },
         {
@@ -285,82 +285,155 @@
          id:"std10",
          name: "Bronze Earring",
          price: 15,
-         img: "/assets/imgs/stdimg/std10.jpg",
+         img: "/assets/imgs/stdimg/std10.png",
          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
         },]
      
-        
-       //bracelets card details
+               //bracelets card details
        let brcCardDetails=[{
-         id:"brc1",
-         name: "Silver Earring",
-         price: 200,
-         img: "/assets/imgs/brclimg/brc1.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc2",
-         name: "Gold-plated Earring",
-         price: 100,
-         img: "/assets/imgs/brclimg/brc2.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc3",
-         name: "Solid Gold",
-         price: 30,
-         img: "/assets/imgs/brclimg/brc3.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc4",
-         name: "Bronze Earring",
-         price: 10,
-         img: "/assets/imgs/brclimg/brc4.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc5",
-         name: "Bronze Earring",
-         price: 45,
-         img: "/assets/imgs/brclimg/brc5.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc6",
-         name: "Bronze Earring",
-         price: 70,
-         img: "/assets/imgs/brclimg/brc6.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc7",
-         name: "Bronze Earring",
-         price: 50,
-         img: "/assets/imgs/brclimg/brc7.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc8",
-         name: "Bronze Earring",
-         price: 120,
-         img: "/assets/imgs/brclimg/brc8.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc9",
-         name: "Bronze Earring",
-         price: 10,
-         img: "/assets/imgs/brclimg/brc9.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-         id:"brc10",
-         name: "Bronze Earring",
-         price: 15,
-         img: "/assets/imgs/brclimg/brc10.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },]
-     
+        id:"brc1",
+        name: "Silver Earring",
+        price: 200,
+        img: "/assets/imgs/brclimg/brc1.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc2",
+        name: "Gold-plated Earring",
+        price: 100,
+        img: "/assets/imgs/brclimg/brc2.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc3",
+        name: "Solid Gold",
+        price: 30,
+        img: "/assets/imgs/brclimg/brc3.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc4",
+        name: "Bronze Earring",
+        price: 10,
+        img: "/assets/imgs/brclimg/brc4.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc5",
+        name: "Bronze Earring",
+        price: 45,
+        img: "/assets/imgs/brclimg/brc5.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc6",
+        name: "Bronze Earring",
+        price: 70,
+        img: "/assets/imgs/brclimg/brc6.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc7",
+        name: "Bronze Earring",
+        price: 50,
+        img: "/assets/imgs/brclimg/brc7.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc8",
+        name: "Bronze Earring",
+        price: 120,
+        img: "/assets/imgs/brclimg/brc8.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc9",
+        name: "Bronze Earring",
+        price: 10,
+        img: "/assets/imgs/brclimg/brc9.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },
+       {
+        id:"brc10",
+        name: "Bronze Earring",
+        price: 15,
+        img: "/assets/imgs/brclimg/brc10.png",
+        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+       },]
+        
+
+
     
-    
+         //Jewellery Set card details
+         let jwsCardDetails=[{
+          id:"jws1",
+          name: "Silver Earring",
+          price: 200,
+          img: "/assets/imgs/jwsetimg/jws1.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws2",
+          name: "Gold-plated Earring",
+          price: 100,
+          img: "/assets/imgs/jwsetimg/jws2.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws3",
+          name: "Solid Gold",
+          price: 30,
+          img: "/assets/imgs/jwsetimg/jws3.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws4",
+          name: "Bronze Earring",
+          price: 10,
+          img: "/assets/imgs/jwsetimg/jws4.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws5",
+          name: "Bronze Earring",
+          price: 45,
+          img: "/assets/imgs/jwsetimg/jws5.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws6",
+          name: "Bronze Earring",
+          price: 70,
+          img: "/assets/imgs/jwsetimg/jws6.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws7",
+          name: "Bronze Earring",
+          price: 50,
+          img: "/assets/imgs/jwsetimg/jws7.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws8",
+          name: "Bronze Earring",
+          price: 120,
+          img: "/assets/imgs/jwsetimg/jws8.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws9",
+          name: "Bronze Earring",
+          price: 10,
+          img: "/assets/imgs/jwsetimg/jws9.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },
+         {
+          id:"jws10",
+          name: "Bronze Earring",
+          price: 15,
+          img: "/assets/imgs/jwsetimg/jws10.png",
+          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+         },]
+      
+      

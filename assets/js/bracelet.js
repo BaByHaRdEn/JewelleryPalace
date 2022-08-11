@@ -3,6 +3,9 @@
     let brcCard= document.getElementById("bracelet-cards");
     let brcBasket=JSON.parse(localStorage.getItem("data")) || [];
  
+    function goBack() {
+        window.history.back()
+      }
    
     //Card Return Function
     let braceletCard=()=>{

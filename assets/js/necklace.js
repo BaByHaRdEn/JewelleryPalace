@@ -3,6 +3,9 @@
     let nkCard= document.getElementById("necklace-cards");
     let nkBasket=JSON.parse(localStorage.getItem("data")) || [];
  
+    function goBack() {
+        window.history.back()
+      }
    
     //Card Return Function
     let necklaceCard=()=>{

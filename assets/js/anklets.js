@@ -1,88 +1,20 @@
 
-    let erCard= document.getElementById("earring-cards");
-    let basket=JSON.parse(localStorage.getItem("data")) || [];
+
+    let ankCard= document.getElementById("anklet-cards");
+    let ankBasket=JSON.parse(localStorage.getItem("data")) || [];
  
- 
-    //Earring cards Details
-    let cardDetails=[{
-     id:1,
-     name: "Silver Earring",
-     price: 200,
-     img: "/assets/imgs/er1.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:2,
-     name: "Gold-plated Earring",
-     price: 100,
-     img: "/assets/imgs/er2.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:3,
-     name: "Solid Gold",
-     price: 30,
-     img: "/assets/imgs/er3.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:4,
-     name: "Bronze Earring",
-     price: 10,
-     img: "/assets/imgs/er4.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:5,
-     name: "Bronze Earring",
-     price: 45,
-     img: "/assets/imgs/er5.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:6,
-     name: "Bronze Earring",
-     price: 70,
-     img: "/assets/imgs/er6.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:7,
-     name: "Bronze Earring",
-     price: 50,
-     img: "/assets/imgs/er7.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:8,
-     name: "Bronze Earring",
-     price: 120,
-     img: "/assets/imgs/er8.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:9,
-     name: "Bronze Earring",
-     price: 10,
-     img: "/assets/imgs/er9.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },
-    {
-     id:10,
-     name: "Bronze Earring",
-     price: 15,
-     img: "/assets/imgs/er10.png",
-     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-    },]
- 
+    function goBack() {
+        window.history.back()
+      }
+   
     //Card Return Function
-    let earringCard=()=>{
-     return( erCard.innerHTML= cardDetails.map((x)=>{
+    let ankletCard=()=>{
+     return( ankCard.innerHTML= ankCardDetails.map((x)=>{
          let {id, name, price, img, desc}=x;
-         let search= basket.find((x)=> x.id === id) || [];
+         let search= ankBasket.find((x)=> x.id === id) || [];
      return(
          `
-         <div id=er-card-${id} class="er-card">
+         <div id=ank-card-${id} class="ank-card">
                      <div class="card-img">
                      <img src=${img} alt="">
                      </div>
@@ -92,26 +24,26 @@
                          <div class="price">
                              <h2 class="dollar">&dollar; ${price}</h2>
                              <div class="quantity">
-                                 <i onclick="decrement(${id})" class="fa fa-minus"></i>
+                                 <i onclick="ankDecrement(${id})" class="fa fa-minus"></i>
                                  <div id=${id} class="amount">${search.item === undefined ?0 : search.item}</div>
-                                 <i onclick="increment(${id})" class="fa fa-plus"></i>
+                                 <i onclick="ankIncrement(${id})" class="fa fa-plus"></i>
                              </div>
                          </div>
-                         <button class="btn btn-danger" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
+                         <button class="btn btn-danger" onclick="ankCarting()" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
                      </div>
                  </div>
          `
      )
      }).join(""));
     };
-    earringCard();
+    ankletCard();
  
- let increment= (id)=>{
+ let ankIncrement= (id)=>{
      let selectedItem=id;
-     let search= basket.find((x)=>x.id === selectedItem);
+     let search= ankBasket.find((x)=>x.id === selectedItem);
  
      if (search === undefined) {
-         basket.push({
+         ankBasket.push({
              id: selectedItem,
              item:1
          });
@@ -119,14 +51,14 @@
          search.item += 1;
      }
      
-     localStorage.setItem("data", JSON.stringify(basket));
-     update(selectedItem);
+     localStorage.setItem("data", JSON.stringify(ankBasket));
+     ankUpdate(selectedItem);
  }
  
  
- let decrement= (id)=>{
+ let ankDecrement= (id)=>{
      let selectedItem=id;
-     let search= basket.find((x)=>x.id === selectedItem);
+     let search= ankBasket.find((x)=>x.id === selectedItem);
  
      if(search === undefined) return
      else if (search.item === 0) return;
@@ -134,25 +66,25 @@
          search.item -= 1;
      }
      
-     update(selectedItem);
+     ankUpdate(selectedItem);
  
-     basket= basket.filter((x)=> x.item !== 0);
+     ankBasket= ankBasket.filter((x)=> x.item !== 0);
  
-     localStorage.setItem("data", JSON.stringify(basket));
+     localStorage.setItem("data", JSON.stringify(ankBasket));
  }
  
  
- let update= (id)=>{
-     let search= basket.find((x)=>x.id === id);
+ let ankUpdate= (id)=>{
+     let search= ankBasket.find((x)=>x.id === id);
  
      document.getElementById(id).innerHTML=search.item
  
-     carting();
+     
  }
  
- let carting= (id)=>{
+ let ankCarting= ()=>{
     let cartIcon=  document.getElementById("cartAmount");
-    cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y)=> x + y, 0);
+    cartIcon.innerHTML = ankBasket.length;
  
  }
- carting();
+ ankCarting();

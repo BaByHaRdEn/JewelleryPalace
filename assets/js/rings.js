@@ -3,6 +3,10 @@
     let rnBasket= JSON.parse(localStorage.getItem("data")) || [];
  
  
+    function goBack() {
+        window.history.back()
+      }
+   
    
     let ringCard=()=>{
         return(rnCard.innerHTML=rnCardDetails.map((x)=>{
