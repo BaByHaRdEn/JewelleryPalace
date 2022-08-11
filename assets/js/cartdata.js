@@ -69,75 +69,75 @@
          img: "/assets/imgs/erimg/er10.png",
          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
         },{
-        id:"1nk",
-         name: "Silver Earring",
-         price: 200,
-         img: "/assets/imgs/nkimg/nk1.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"2nk",
-         name: "Gold-plated Earring",
-         price: 100,
-         img: "/assets/imgs/nkimg/nk2.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"3nk",
-         name: "Solid Gold",
-         price: 30,
-         img: "/assets/imgs/nkimg/nk3.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"4nk",
-         name: "Bronze Earring",
-         price: 10,
-         img: "/assets/imgs/nkimg/nk4.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"5nk",
-         name: "Bronze Earring",
-         price: 45,
-         img: "/assets/imgs/nkimg/nk5.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"6nk",
-         name: "Bronze Earring",
-         price: 70,
-         img: "/assets/imgs/nkimg/nk6.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"7nk",
-         name: "Bronze Earring",
-         price: 50,
-         img: "/assets/imgs/nkimg/nk7.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"8nk",
-         name: "Bronze Earring",
-         price: 120,
-         img: "/assets/imgs/nkimg/nk8.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"9nk",
-         name: "Bronze Earring",
-         price: 10,
-         img: "/assets/imgs/nkimg/nk9.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },
-        {
-        id:"10nk",
-         name: "Bronze Earring",
-         price: 15,
-         img: "/assets/imgs/nkimg/nk10.png",
-         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
-        },{
+          id:"nk1",
+           name: "Silver Earring",
+           price: 200,
+           img: "/assets/imgs/nkimg/nk1.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk2",
+           name: "Gold-plated Earring",
+           price: 100,
+           img: "/assets/imgs/nkimg/nk2.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk3",
+           name: "Solid Gold",
+           price: 30,
+           img: "/assets/imgs/nkimg/nk3.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk4",
+           name: "Bronze Earring",
+           price: 10,
+           img: "/assets/imgs/nkimg/nk4.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk5",
+           name: "Bronze Earring",
+           price: 45,
+           img: "/assets/imgs/nkimg/nk5.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk6",
+           name: "Bronze Earring",
+           price: 70,
+           img: "/assets/imgs/nkimg/nk6.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk7",
+           name: "Bronze Earring",
+           price: 50,
+           img: "/assets/imgs/nkimg/nk7.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk8",
+           name: "Bronze Earring",
+           price: 120,
+           img: "/assets/imgs/nkimg/nk8.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk9",
+           name: "Bronze Earring",
+           price: 10,
+           img: "/assets/imgs/nkimg/nk9.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },
+          {
+          id:"nk10",
+           name: "Bronze Earring",
+           price: 15,
+           img: "/assets/imgs/nkimg/nk10.png",
+           desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+          },{
              id:"rn1",
              name: "Silver Earring",
              price: 200,

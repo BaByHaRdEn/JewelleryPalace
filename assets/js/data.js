@@ -74,70 +74,70 @@
 
      //Necklace cards Details
   let nkCardDetails=[{
-   id:"1er",
+   id:"nk1",
     name: "Silver Earring",
     price: 200,
     img: "/assets/imgs/nkimg/nk1.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"2er",
+   id:"nk2",
     name: "Gold-plated Earring",
     price: 100,
     img: "/assets/imgs/nkimg/nk2.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"3er",
+   id:"nk3",
     name: "Solid Gold",
     price: 30,
     img: "/assets/imgs/nkimg/nk3.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"4er",
+   id:"nk4",
     name: "Bronze Earring",
     price: 10,
     img: "/assets/imgs/nkimg/nk4.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"5er",
+   id:"nk5",
     name: "Bronze Earring",
     price: 45,
     img: "/assets/imgs/nkimg/nk5.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"6er",
+   id:"nk6",
     name: "Bronze Earring",
     price: 70,
     img: "/assets/imgs/nkimg/nk6.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"7er",
+   id:"nk7",
     name: "Bronze Earring",
     price: 50,
     img: "/assets/imgs/nkimg/nk7.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"8er",
+   id:"nk8",
     name: "Bronze Earring",
     price: 120,
     img: "/assets/imgs/nkimg/nk8.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"9er",
+   id:"nk9",
     name: "Bronze Earring",
     price: 10,
     img: "/assets/imgs/nkimg/nk9.png",
     desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
    },
    {
-   id:"10er",
+   id:"nk10",
     name: "Bronze Earring",
     price: 15,
     img: "/assets/imgs/nkimg/nk10.png",

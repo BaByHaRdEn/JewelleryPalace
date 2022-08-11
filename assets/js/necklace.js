@@ -9,7 +9,7 @@
  
   
     //Card Return Function
-    let necklaceCard=()=>{
+    let earringCard=()=>{
      return( nkCard.innerHTML= nkCardDetails.map((x)=>{
          let {id, name, price, img, desc}=x;
          let search= nkBasket.find((x)=> x.id === id) || [];
@@ -37,7 +37,7 @@
      )
      }).join(""));
     };
-    necklaceCard();
+    earringCard();
  
  let nkIncrement= (id)=>{
      let selectedItem=id;
@@ -88,4 +88,3 @@
  
  }
  nkCarting();
- 
