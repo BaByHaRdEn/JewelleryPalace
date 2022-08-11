@@ -1,12 +1,13 @@
 
-
     let nkCard= document.getElementById("necklace-cards");
     let nkBasket=JSON.parse(localStorage.getItem("data")) || [];
  
+ 
     function goBack() {
-        window.history.back()
-      }
-   
+     window.history.back()
+   }
+ 
+  
     //Card Return Function
     let necklaceCard=()=>{
      return( nkCard.innerHTML= nkCardDetails.map((x)=>{
@@ -24,12 +25,12 @@
                          <div class="price">
                              <h2 class="dollar">&dollar; ${price}</h2>
                              <div class="quantity">
-                                 <i onclick="decrement(${id})" class="fa fa-minus"></i>
+                                 <i onclick="nkDecrement(${id})" class="fa fa-minus"></i>
                                  <div id=${id} class="amount">${search.item === undefined ?0 : search.item}</div>
-                                 <i onclick="increment(${id})" class="fa fa-plus"></i>
+                                 <i onclick="nkIncrement(${id})" class="fa fa-plus"></i>
                              </div>
                          </div>
-                         <button class="btn btn-danger" onclick="nkCarting()" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
+                         <button class="btn btn-danger" onclick="nkCarting()"><i class="fa fa-cart-plus"></i> Add to Cart</button>
                      </div>
                  </div>
          `
@@ -38,13 +39,13 @@
     };
     necklaceCard();
  
- let increment= (id)=>{
+ let nkIncrement= (id)=>{
      let selectedItem=id;
-     let search= nkBasket.find((x)=>x.id === selectedItem);
+     let search= nkBasket.find((x)=>x.id === selectedItem.id);
  
      if (search === undefined) {
          nkBasket.push({
-             id: selectedItem,
+             id: selectedItem.id,
              item:1
          });
      } else {
@@ -52,13 +53,13 @@
      }
      
      localStorage.setItem("data", JSON.stringify(nkBasket));
-     update(selectedItem);
+     nkUpdate(selectedItem.id);
  }
  
  
- let decrement= (id)=>{
+ let nkDecrement= (id)=>{
      let selectedItem=id;
-     let search= nkBasket.find((x)=>x.id === selectedItem);
+     let search= nkBasket.find((x)=>x.id === selectedItem.id);
  
      if(search === undefined) return
      else if (search.item === 0) return;
@@ -66,7 +67,7 @@
          search.item -= 1;
      }
      
-     update(selectedItem);
+     nkUpdate(selectedItem.id);
  
      nkBasket= nkBasket.filter((x)=> x.item !== 0);
  
@@ -74,12 +75,11 @@
  }
  
  
- let update= (id)=>{
+ let nkUpdate= (id)=>{
      let search= nkBasket.find((x)=>x.id === id);
  
-     document.getElementById(id).innerHTML=search.item
+     document.getElementById(id).innerHTML=search.item;
  
-     
  }
  
  let nkCarting= ()=>{
@@ -88,3 +88,4 @@
  
  }
  nkCarting();
+ 

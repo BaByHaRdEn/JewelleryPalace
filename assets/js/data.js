@@ -1,8 +1,8 @@
  
  
-      //Earring cards Details
+  //Earring cards Details
    let erCardDetails=[{
-    id:20,
+    id:"er1",
     name: "Silver Earring",
     price: 10,
     img: "/assets/imgs/erimg/er1.png",
@@ -145,7 +145,7 @@
    },]
 
  
-    //Ring cards Details
+  //Ring cards Details
     let rnCardDetails=[{
         id:"rn1",
         name: "Silver Earring",
@@ -217,7 +217,7 @@
         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
        },]
 
-       //bracelets card details
+       //Studs card details
        let stdCardsDetails=[{
          id:"std1",
          name: "Silver Earring",
@@ -289,7 +289,9 @@
          desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
         },]
      
-               //bracelets card details
+
+
+        //bracelets card details
        let brcCardDetails=[{
         id:"brc1",
         name: "Silver Earring",
@@ -360,10 +362,81 @@
         img: "/assets/imgs/brclimg/brc10.png",
         desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
        },]
-        
+
+                      //Ankletss card details
+                      let ankCardDetails=[{
+                        id:"ank1",
+                        name: "Silver Earring",
+                        price: 200,
+                        img: "/assets/imgs/ankimg/ank1.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank2",
+                        name: "Gold-plated Earring",
+                        price: 100,
+                        img: "/assets/imgs/ankimg/ank2.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank3",
+                        name: "Solid Gold",
+                        price: 30,
+                        img: "/assets/imgs/ankimg/ank3.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank4",
+                        name: "Bronze Earring",
+                        price: 10,
+                        img: "/assets/imgs/ankimg/ank4.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank5",
+                        name: "Bronze Earring",
+                        price: 45,
+                        img: "/assets/imgs/ankimg/ank5.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank6",
+                        name: "Bronze Earring",
+                        price: 70,
+                        img: "/assets/imgs/ankimg/ank6.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank7",
+                        name: "Bronze Earring",
+                        price: 50,
+                        img: "/assets/imgs/ankimg/ank7.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank8",
+                        name: "Bronze Earring",
+                        price: 120,
+                        img: "/assets/imgs/ankimg/ank8.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank9",
+                        name: "Bronze Earring",
+                        price: 10,
+                        img: "/assets/imgs/ankimg/ank9.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },
+                       {
+                        id:"ank10",
+                        name: "Bronze Earring",
+                        price: 15,
+                        img: "/assets/imgs/ankimg/ank10.png",
+                        desc: " Lorem ipsum dolor sit, amet consectetur adipisicing."
+                       },]
 
 
-    
+
          //Jewellery Set card details
          let jwsCardDetails=[{
           id:"jws1",

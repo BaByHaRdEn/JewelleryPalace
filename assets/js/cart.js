@@ -64,11 +64,11 @@ let carting= ()=>{
 
  let increment= (id)=>{
     let selectedItem=id;
-    let search= cart.find((x)=>x.id === selectedItem);
+    let search= cart.find((x)=>x.id === selectedItem.id);
 
     if (search === undefined) {
         cart.push({
-            id: selectedItem,
+            id: selectedItem.id,
             item:1
         });
     } else {
@@ -78,13 +78,13 @@ let carting= ()=>{
     localStorage.setItem("data", JSON.stringify(cart));
     generateCartItems();
     TotalAmount();
-    update(selectedItem);
+    update(selectedItem.id);
 }
 
 
 let decrement= (id)=>{
     let selectedItem=id;
-    let search= cart.find((x)=>x.id === selectedItem);
+    let search= cart.find((x)=>x.id === selectedItem.id);
 
     if(search === undefined) return
     else if (search.item === 0) return;
@@ -92,7 +92,7 @@ let decrement= (id)=>{
         search.item -= 1;
     }
     
-    update(selectedItem);
+    update(selectedItem.id);
 
     cart= cart.filter((x)=> x.item !== 0);
     generateCartItems();
@@ -109,7 +109,7 @@ let update= (id)=>{
 }
 let removeItem= (id)=>{
     let selectedItem= id;
-    cart= cart.filter((x)=>x.id !== selectedItem);
+    cart= cart.filter((x)=>x.id !== selectedItem.id);
     localStorage.setItem("data", JSON.stringify(cart));
     generateCartItems();
     carting();

@@ -25,9 +25,9 @@
                         <div class="price">
                             <h2 class="dollar">&dollar; ${price}</h2>
                             <div class="quantity">
-                                <i onclick="decrement(${id})" class="fa fa-minus"></i>
+                                <i onclick="erDecrement(${id})" class="fa fa-minus"></i>
                                 <div id=${id} class="amount">${search.item === undefined ?0 : search.item}</div>
-                                <i onclick="increment(${id})" class="fa fa-plus"></i>
+                                <i onclick="erIncrement(${id})" class="fa fa-plus"></i>
                             </div>
                         </div>
                         <button class="btn btn-danger" onclick="erCarting()"><i class="fa fa-cart-plus"></i> Add to Cart</button>
@@ -39,13 +39,13 @@
    };
    earringCard();
 
-let increment= (id)=>{
+let erIncrement= (id)=>{
     let selectedItem=id;
-    let search= erbasket.find((x)=>x.id === selectedItem);
+    let search= erbasket.find((x)=>x.id === selectedItem.id);
 
     if (search === undefined) {
         erbasket.push({
-            id: selectedItem,
+            id: selectedItem.id,
             item:1
         });
     } else {
@@ -53,13 +53,13 @@ let increment= (id)=>{
     }
     
     localStorage.setItem("data", JSON.stringify(erbasket));
-    update(selectedItem);
+    erUpdate(selectedItem.id);
 }
 
 
-let decrement= (id)=>{
+let erDecrement= (id)=>{
     let selectedItem=id;
-    let search= erbasket.find((x)=>x.id === selectedItem);
+    let search= erbasket.find((x)=>x.id === selectedItem.id);
 
     if(search === undefined) return
     else if (search.item === 0) return;
@@ -67,7 +67,7 @@ let decrement= (id)=>{
         search.item -= 1;
     }
     
-    update(selectedItem);
+    erUpdate(selectedItem.id);
 
     erbasket= erbasket.filter((x)=> x.item !== 0);
 
@@ -75,7 +75,7 @@ let decrement= (id)=>{
 }
 
 
-let update= (id)=>{
+let erUpdate= (id)=>{
     let search= erbasket.find((x)=>x.id === id);
 
     document.getElementById(id).innerHTML=search.item;

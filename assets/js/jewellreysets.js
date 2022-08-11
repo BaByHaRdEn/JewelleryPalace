@@ -40,11 +40,11 @@
  
  let jwsIncrement= (id)=>{
      let selectedItem=id;
-     let search= jwsBasket.find((x)=>x.id === selectedItem);
+     let search= jwsBasket.find((x)=>x.id === selectedItem.id);
  
      if (search === undefined) {
          jwsBasket.push({
-             id: selectedItem,
+             id: selectedItem.id,
              item:1
          });
      } else {
@@ -52,13 +52,13 @@
      }
      
      localStorage.setItem("data", JSON.stringify(jwsBasket));
-     jwsUpdate(selectedItem);
+     jwsUpdate(selectedItem.id);
  }
  
  
  let jwsDecrement= (id)=>{
      let selectedItem=id;
-     let search= jwsBasket.find((x)=>x.id === selectedItem);
+     let search= jwsBasket.find((x)=>x.id === selectedItem.id);
  
      if(search === undefined) return
      else if (search.item === 0) return;
@@ -66,7 +66,7 @@
          search.item -= 1;
      }
      
-     jwsUpdate(selectedItem);
+     jwsUpdate(selectedItem.id);
  
      jwsBasket= jwsBasket.filter((x)=> x.item !== 0);
  

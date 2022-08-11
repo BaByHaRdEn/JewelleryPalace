@@ -41,11 +41,11 @@
  
  let stdIncrement= (id)=>{
      let selectedItem=id;
-     let search= stdBasket.find((x)=>x.id === selectedItem);
+     let search= stdBasket.find((x)=>x.id === selectedItem.id);
  
      if (search === undefined) {
          stdBasket.push({
-             id: selectedItem,
+             id: selectedItem.id,
              item:1
          });
      } else {
@@ -53,13 +53,13 @@
      }
      
      localStorage.setItem("data", JSON.stringify(stdBasket));
-     stdUpdate(selectedItem);
+     stdUpdate(selectedItem.id);
  }
  
  
  let stdDecrement= (id)=>{
      let selectedItem=id;
-     let search= stdBasket.find((x)=>x.id === selectedItem);
+     let search= stdBasket.find((x)=>x.id === selectedItem.id);
  
      if(search === undefined) return
      else if (search.item === 0) return;
@@ -67,7 +67,7 @@
          search.item -= 1;
      }
      
-     stdUpdate(selectedItem);
+     stdUpdate(selectedItem.id);
  
      stdBasket= stdBasket.filter((x)=> x.item !== 0);
  

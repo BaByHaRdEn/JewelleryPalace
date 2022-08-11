@@ -23,9 +23,9 @@
                 <div class="price">
                     <h2 class="dollar">&dollar;${price}</h2>
                     <div class="quantity">
-                        <i onclick="decrement(${id})" class="fa fa-minus"></i>
+                        <i onclick="rnDecrement(${id})" class="fa fa-minus"></i>
                         <div id=${id} class="amount">${search.item === undefined ? 0: search.item }</div>
-                        <i onclick="increment(${id})" class="fa fa-plus"></i>
+                        <i onclick="rnIncrement(${id})" class="fa fa-plus"></i>
                     </div>
                 </div>
                 <button class="btn btn-danger" onclick="rnCarting()" ><i class="fa fa-cart-plus"></i> Add to Cart</button>
@@ -37,38 +37,38 @@
 
     ringCard();
 
-    let increment=(id)=>{
-        selectedItem= id;
-        let search= rnBasket.find((x)=>x.id=== selectedItem)
+    let rnIncrement=(id)=>{
+      let selectedItem= id;
+        let search= rnBasket.find((x)=>x.id=== selectedItem.id)
        
         if(search === undefined){
             rnBasket.push({
-                id: selectedItem,
+                id: selectedItem.id,
                 item: 1
             })
         }else{
             search.item +=1;
         }
         localStorage.setItem("data", JSON.stringify(rnBasket));
-        update(selectedItem);
+        rnUpdate(selectedItem.id);
     }
-    let decrement=(id)=>{
-        selectedItem= id;
-        let search= rnBasket.find((x)=>x.id=== selectedItem)
+    let rnDecrement=(id)=>{
+       let selectedItem= id;
+        let search= rnBasket.find((x)=>x.id=== selectedItem.id)
        
         if(search=== undefined)return;
         else if(search.item === 0)return;
         else{
             search.item -=1;
         }
-        update(selectedItem);
+        rnUpdate(selectedItem.id);
 
         rnBasket=rnBasket.filter((x)=> x.item !== 0);
 
         localStorage.setItem("data", JSON.stringify(rnBasket));
     }
 
-    let update=(id)=>{
+    let rnUpdate=(id)=>{
         let search= rnBasket.find((x)=>x.id === id);
  
         document.getElementById(id).innerHTML=search.item;

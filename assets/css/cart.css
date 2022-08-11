@@ -90,6 +90,7 @@
     color:#fff;
     border-radius: 5px;
     padding: 2px;
+    cursor: pointer;
 }
 #cart-items .cart-item .card-details  h4{
     border: 1px solid #000;

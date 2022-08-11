@@ -40,11 +40,11 @@
  
  let brcIncrement= (id)=>{
      let selectedItem=id;
-     let search= brcBasket.find((x)=>x.id === selectedItem);
+     let search= brcBasket.find((x)=>x.id === selectedItem.id);
  
      if (search === undefined) {
          brcBasket.push({
-             id: selectedItem,
+             id: selectedItem.id,
              item:1
          });
      } else {
@@ -52,13 +52,13 @@
      }
      
      localStorage.setItem("data", JSON.stringify(brcBasket));
-     brcUpdate(selectedItem);
+     brcUpdate(selectedItem.id);
  }
  
  
  let brcDecrement= (id)=>{
      let selectedItem=id;
-     let search= brcBasket.find((x)=>x.id === selectedItem);
+     let search= brcBasket.find((x)=>x.id === selectedItem.id);
  
      if(search === undefined) return
      else if (search.item === 0) return;
@@ -66,7 +66,7 @@
          search.item -= 1;
      }
      
-     brcUpdate(selectedItem);
+     brcUpdate(selectedItem.id);
  
      brcBasket= brcBasket.filter((x)=> x.item !== 0);
  
