@@ -392,10 +392,14 @@ footer a{
 }
 
 /*Best Selling Products*/
-
-#scroll-cards .sc-card{
-    margin-left: 25px
+#bsp header{
+    font-size: x-large;
 }
+
+#scroll-cards{
+    gap:10px
+}
+
 
 
 /*Shero*/

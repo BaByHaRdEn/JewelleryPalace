@@ -27,12 +27,12 @@ modeBtn.addEventListener("click", ()=>{
 // arrow keys
 function scrolll() {
     let left = document.getElementById("scroll-cards");
-    left.scrollBy(300, 0)
+    left.scrollBy(280, 0)
 }
 
 function scrollr() {
     let right = document.getElementById("scroll-cards");
-    right.scrollBy(-300, 0)
+    right.scrollBy(-280, 0)
 }
 
 //scroll cards
