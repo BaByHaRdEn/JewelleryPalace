@@ -42,10 +42,10 @@ let carting= ()=>{
                 <i onclick="increment(${id})" class="fa fa-plus"></i>
             </div>
             <div class="price-x">
-            <h5> &dollar; ${search.price}</h5>
-            </div>
-            </div>
             <h4>&dollar; ${item * search.price}</h4>
+            </div>
+            </div>
+            <h5> &dollar; ${search.price}</h5>
             </div>
             </div>
             `
@@ -63,6 +63,107 @@ let carting= ()=>{
  }
 
  generateCartItems();
+
+ let options= ()=>{
+    if (cart.length !== 0) {
+        return document.getElementById("options").innerHTML= 
+        `<div id="bsp">
+         <header>You may also like</header>
+         <div id="cover">
+         <div>
+             <button class="icon" onclick="scrollr()"><i class="fa fa-angle-double-left"></i></button>
+         </div>
+             <!--Scroll cards-->
+             <div id="scroll-cards">
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (1)1.png" alt="">
+                     </div>
+                        <button class="btn btn-danger"><a href="rings.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (1).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="rings.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (11).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="necklace.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (12).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="rings.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (13).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="necklace.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (14).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="necklace.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (15).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href=""><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (16).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="bracelets.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/erimg/er5.png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="necklace.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (18).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="earrings.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (19).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="necklace.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (20).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="necklace.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+                 <div class="sc-card">
+                     <div class="card-img">
+                     <img src="assets/imgs/slide (2).png" alt="">
+                     </div>
+                     <button class="btn btn-danger"><a href="necklace.html"><i class="fa fa-cart-plus"></i></a></button>
+                 </div>
+             </div>
+         <div>
+             <button class="icon" onclick="scrolll() "><i class="fa fa-angle-double-right"></i></button>
+         </div>
+         </div>
+     </div>
+        ` }else{
+            document.getElementById("options").innerHTML=``
+        }
+ }
+ options();
 
  let increment= (id)=>{
     let selectedItem=id;
@@ -147,12 +248,12 @@ let TotalAmount = () => {
   
   function scrolll() {
     let left = document.getElementById("scroll-cards");
-    left.scrollBy(300, 0)
+    left.scrollBy(280, 0)
 }
 
 function scrollr() {
     let right = document.getElementById("scroll-cards");
-    right.scrollBy(-300, 0)
+    right.scrollBy(-280, 0)
 }
 
 //scroll cards
