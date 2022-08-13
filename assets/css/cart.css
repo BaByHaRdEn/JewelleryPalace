@@ -89,7 +89,7 @@
     justify-content: space-between;
 }
 #cart-items .cart-item .card-details .price-qty-x .qty .amount{
-    padding:1px 7px;
+    padding:10px 7px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #cart-items .cart-item .card-details .price-qty-x .qty i{

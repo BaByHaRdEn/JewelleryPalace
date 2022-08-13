@@ -317,6 +317,7 @@ footer{
     font-size: larger;
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
+    color: #000;
 }
 footer a{
     text-decoration: none;
@@ -446,5 +447,7 @@ footer a{
     margin-right: 0px;
     width: 100%;
 }
-
+footer{
+    font-size:small ;
+}
 }

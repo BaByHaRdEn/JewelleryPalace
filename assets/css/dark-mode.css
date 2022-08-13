@@ -344,7 +344,7 @@ footer a{
     font-size: small;
 }
 #logo-color{
-    color: #000;
+    color: rgb(167, 161, 161);
 }
 #navigation{
     align-self: center;
@@ -446,6 +446,9 @@ footer a{
     font-size: xx-small;
     margin-right: 0px;
     width: 100%;
+}
+footer{
+    font-size:small ;
 }
 
 }

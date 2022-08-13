@@ -12,6 +12,9 @@ let scrCards=document.getElementById("scroll-cards");
     let btn=document.getElementById("toggle")
     btn.classList.toggle("fa-lightbulb-o")
 })
+let goBack=()=> {
+    window.history.back()
+  }
 
 let cart=JSON.parse(localStorage.getItem("data")) || [];
 
@@ -57,7 +60,7 @@ let carting= ()=>{
 
         <h2>Your Cart is Empty</h2>
         <h4>That means it's full of possibilities. Find the next Jewellery to spice up your looks.</h4>
-        <a href="index.html"><button class="btn btn-danger ">Continue shopping <i class="fa-solid fa-angle-double-right fa-fade"></i></button></a>
+        <button class="btn btn-danger " onclick="goBack()">Continue shopping <i class="fa-solid fa-angle-double-right fa-fade"></i></button>
         `
     }
     options();
@@ -267,3 +270,4 @@ SCcards.forEach((c,i)=>{
         scCard[i].lastElementChild.style.visibility="hidden";
     })
 })
+
