@@ -60,6 +60,7 @@ let carting= ()=>{
         <a href="index.html"><button class="btn btn-danger ">Continue shopping <i class="fa-solid fa-angle-double-right fa-fade"></i></button></a>
         `
     }
+    options();
  }
 
  generateCartItems();
