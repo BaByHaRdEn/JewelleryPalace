@@ -22,7 +22,7 @@ modeBtn.addEventListener("click", ()=>{
     let dark =document.getElementById("light");
     dark.toggleAttribute("disabled")
     let btn=document.getElementById("toggle")
-    btn.classList.toggle("fa-toggle-on")
+    btn.classList.toggle("fa-lightbulb-o")
 })
 // arrow keys
 function scrolll() {
