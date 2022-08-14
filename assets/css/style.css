@@ -199,7 +199,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
-    gap: 10px;
+    gap: 20px;
 }
 #scroll-cards::-webkit-scrollbar{
     -webkit-appearance: none;
@@ -407,7 +407,7 @@ footer a{
 }
 
 #scroll-cards{
-    gap:10px
+    gap:20px
 }
 
 
